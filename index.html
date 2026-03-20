@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       META & SEO
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CodeNexuss ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Professional Full Stack Development Company. We design, build, maintain, and deploy modern web applications for businesses." />
+  <meta name="keywords" content="CodeNexuss, full stack development, web development, AI integration, software company India" />
+  <meta name="author" content="CodeNexuss" />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:title" content="CodeNexuss ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Full Stack Development Company" />
+  <meta property="og:description" content="Professional web application development for modern businesses." />
+  <meta property="og:url" content="https://www.CodeNexuss.in" />
+  <meta property="og:type" content="website" />
+
+  <title>CodeNexuss ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Professional Full Stack Development</title>
+
+  <!-- ============================================================
+       GOOGLE FONTS
+       Syne (display/headings) + DM Sans (body) ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ distinctive pairing
+       ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       ICONS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Boxicons CDN
+       ============================================================ -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- ============================================================
+       MAIN STYLESHEET
+       ============================================================ -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR (sticky)
+       ============================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="CodeNexuss Home">
+        <span class="logo-icon">&#x2B22;</span>
+        <span class="logo-text">Code<span class="accent">Nexuss</span></span>
+      </a>
+
+      <!-- Desktop menu links -->
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"         class="nav-link active">Home</a></li>
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#services"     class="nav-link">Services</a></li>
+        <li><a href="#technologies" class="nav-link">Technologies</a></li>
+        <li><a href="#portfolio"    class="nav-link">Portfolio</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+        <li><a href="admin.html"    class="nav-link"><i class='bx bx-lock-alt'></i> Admin</a></li>
+      </ul>
+
+      <!-- CTA button in navbar -->
+      <a href="#contact" class="nav-cta">Get a Quote</a>
+
+      <!-- Hamburger toggle (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       SECTION 1 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ HERO
+       ============================================================ -->
+  <section class="hero" id="home" aria-label="Hero Section">
+    <!-- Animated grid/particle canvas background -->
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+    <!-- Decorative floating shapes -->
+    <div class="hero-shape shape-1" aria-hidden="true"></div>
+    <div class="hero-shape shape-2" aria-hidden="true"></div>
+    <div class="hero-shape shape-3" aria-hidden="true"></div>
+
+    <div class="hero-content reveal">
+      <!-- Eyebrow label -->
+      <p class="hero-eyebrow">&#x25C6; Software Development Studio</p>
+
+      <!-- Main headline -->
+      <h1 class="hero-title">
+        Professional<br />
+        <span class="gradient-text">Full Stack</span><br />
+        Development
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="hero-sub">
+        We design, build, maintain, and deploy modern web applications<br class="br-desktop" />
+        for businesses that demand quality.
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="hero-btns">
+        <a href="#services" class="btn btn-primary">View Services</a>
+        <a href="#contact"  class="btn btn-outline">Contact Us</a>
+      </div>
+
+      <!-- Subtle stats row -->
+      <div class="hero-stats">
+        <div class="stat"><strong>50+</strong><span>Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>30+</strong><span>Clients</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>3+</strong><span>Years</span></div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ ABOUT US
+       ============================================================ -->
+  <section class="section about" id="about" aria-label="About Us">
+    <div class="container">
+      <!-- Section header -->
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">About <span class="accent">CodeNexuss</span></h2>
+        <p class="section-desc">
+          CodeNexuss is a boutique software development studio based in India, specialising in building
+          scalable, performant web applications. Founded by two passionate engineers, we combine
+          technical depth with thoughtful product thinking.
+        </p>
+      </div>
+
+      <!-- Founder cards grid -->
+      <div class="founders-grid">
+
+        <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Founder 1 ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
+        <article class="founder-card reveal" aria-label="Founder 1">
+          <div class="founder-img-wrap">
+            <!-- Replace src with actual photo -->
+            <img src="/207016830.jpg" alt="Founder 1 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ CodeNexuss" loading="lazy" onerror="this.src='https://ui-avatars.com/api/?name=Founder+One&background=0f172a&color=38bdf8&size=200'" />
+            <div class="founder-img-overlay"></div>
+          </div>
+
+          <div class="founder-body">
+            <h3 class="founder-name">R N Anand</h3>
+            <p class="founder-role">founder </p>
+            
+            <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Founder bio ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
+            <p class="founder-bio">
+              write bio
+            </p>
+
+            <!-- Tech skill tags -->
+            <div class="skill-tags">
+              <span>HTML</span><span>CSS</span><span>Node.js</span><span></span>
+            </div>
+
+            <!-- Contact info -->
+            <div class="founder-contact">
+              <a href="tel:+918088816520" aria-label="Phone"><i class='bx bx-phone'></i> +91 80888 16520</a>
+              <a href="mailto:rnanand258@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i>rnanand258@gmail.com</a>
+            </div>
+
+            <!-- Social icons -->
+            <div class="founder-socials">
+              <a href="https://github.com/CodewithAnand-coder" aria-label="GitHub"  target="_blank"   class="social-icon"><i class='bx bxl-github'></i></a>
+              <a href="https://www.linkedin.com/in/rnanand/" aria-label="LinkedIn"  target="_blank" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+              <a href="https://www.instagram.com/tommiee_8/" aria-label="Instagram" target="_blank" class="social-icon"><i class='bx bxl-instagram'></i></a>
+            </div>
+          </div>
+        </article>
+
+        
+
+      </div><!-- /founders-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ SERVICES
+       ============================================================ -->
+  <section class="section services" id="services" aria-label="Services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title">Our <span class="accent">Services</span></h2>
+        <p class="section-desc">From idea to deployment ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â we handle the entire software lifecycle.</p>
+      </div>
+
+      <!-- Services card grid (8 services) -->
+      <div class="services-grid">
+
+        <!-- Each service-card has: icon Ãƒâ€šÃ‚Â· title Ãƒâ€šÃ‚Â· description -->
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap"><i class='bx bxl-html5'></i></div>
+          <h3>Frontend Development</h3>
+          <p>Pixel-perfect, accessible, and blazing-fast UIs built with modern HTML, CSS, and JavaScript frameworks.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap"><i class='bx bx-server'></i></div>
+          <h3>Backend Development</h3>
+          <p>Robust RESTful &amp; GraphQL APIs, authentication, and server-side logic using Node.js and Express.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap"><i class='bx bx-layer'></i></div>
+          <h3>Full Stack Development</h3>
+          <p>End-to-end ownership of your product ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â from database schema to polished user interface.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap"><i class='bx bx-data'></i></div>
+          <h3>Data Science</h3>
+          <p>Data analysis, predictive modelling, and machine learning solutions using modern data science tools and techniques</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap"><i class='bx bx-brain'></i></div>
+          <h3>AI Integration</h3>
+          <p>Embed LLMs, intelligent recommendations, and automation pipelines directly into your product.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap"><i class='bx bx-bar-chart-alt-2'></i></div>
+          <h3>Data Analytics</h3>
+          <p>Dashboards, KPI tracking, and actionable insights extracted from your business data.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap"><i class='bx bx-cloud-upload'></i></div>
+          <h3>Website Deployment</h3>
+          <p>CI/CD pipelines, cloud hosting setup, Docker containerisation, and domain configuration.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap"><i class='bx bx-wrench'></i></div>
+          <h3>Website Maintenance</h3>
+          <p>Ongoing updates, security patches, performance monitoring, and 24/7 uptime support.</p>
+        </article>
+
+      </div><!-- /services-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ TECHNOLOGIES
+       ============================================================ -->
+  <section class="section technologies" id="technologies" aria-label="Technology Stack">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Stack</p>
+        <h2 class="section-title">Tech <span class="accent">We Use</span></h2>
+        <p class="section-desc">Carefully chosen tools that are battle-tested in production.</p>
+      </div>
+
+      <!-- Tech categories -->
+      <div class="tech-categories">
+
+        <!-- Frontend -->
+        <div class="tech-category reveal">
+          <h4 class="tech-cat-label">Frontend</h4>
+          <div class="tech-grid">
+            <div class="tech-item"><i class='bx bxl-html5'></i><span>HTML5</span></div>
+            <div class="tech-item"><i class='bx bxl-css3'></i><span>CSS3</span></div>
+            <div class="tech-item"><i class='bx bxl-javascript'></i><span>JavaScript</span></div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="tech-category reveal">
+          <h4 class="tech-cat-label">Backend</h4>
+          <div class="tech-grid">
+            <div class="tech-item"><i class='bx bxl-nodejs'></i><span>Node.js</span></div>
+            <div class="tech-item"><i class='bx bx-code-block'></i><span>PHP</span></div>
+            <div class="tech-item"><i class='bx bx-code-block'></i><span>Express.js</span></div>
+            <div class="tech-item"><i class='bx bx-code-block'></i><span>Spring-Boot</span></div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="tech-category reveal">
+          <h4 class="tech-cat-label">Database</h4>
+          <div class="tech-grid">
+            <div class="tech-item"><i class='bx bx-table'></i><span>MySQL</span></div>
+            <div class="tech-item"><i class='bx bx-table'></i><span>MongoDB</span></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="tech-category reveal">
+          <h4 class="tech-cat-label">Tools</h4>
+          <div class="tech-grid">
+            <div class="tech-item"><i class='bx bxl-git'></i><span>Git</span></div>
+            <div class="tech-item"><i class='bx bxl-github'></i><span>GitHub</span></div>
+            <div class="tech-item"><i class='bx bx-code-alt'></i><span>VS Code</span></div>
+          </div>
+        </div>
+
+      </div><!-- /tech-categories -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ PORTFOLIO
+       ============================================================ -->
+  <section class="section portfolio" id="portfolio" aria-label="Portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Work</p>
+        <h2 class="section-title">Selected <span class="accent">Projects</span></h2>
+        <p class="section-desc">A snapshot of what we've shipped for clients and as internal products.</p>
+      </div>
+
+      <!-- Portfolio cards -->
+      <div class="portfolio-grid">
+        <!-- Project 5 -->
+<article class="project-card reveal">
+  <div class="project-img-wrap">
+    <img src="/images/projects/project5.jpg" alt="Credit Card Fraud Detection" loading="lazy" onerror="this.src='https://placehold.co/600x340/0f172a/38bdf8?text=Credit+Card+Fraud+Detection'" />
+    <div class="project-overlay">
+      <a href="https://github.com/CodewithAnand-coder/Credit-Card-Fraud-Detection-.git" target="_blank" class="btn-icon" aria-label="GitHub repo"><i class='bx bxl-github'></i></a>
+    </div>
+  </div>
+  <div class="project-body">
+    <h3>Credit Card Fraud Detection</h3>
+    <p>ML-powered system that detects fraudulent transactions in real-time using anomaly detection and classification models.</p>
+    <div class="project-tags">
+      <span>HTML</span><span>JavaScript</span>
+    </div>
+    <div class="project-btns">
+      <a href="https://github.com/CodewithAnand-coder/Credit-Card-Fraud-Detection-.git" target="_blank" class="btn btn-sm btn-outline"><i class='bx bxl-github'></i> GitHub</a>
+    </div>
+  </div>
+</article>
+
+<!-- Project 6 -->
+<article class="project-card reveal">
+  <div class="project-img-wrap">
+    <img src="/images/projects/project6.jpg" alt="F1 Racing Analytics System" loading="lazy" onerror="this.src='https://placehold.co/600x340/0f172a/38bdf8?text=F1+Racing+Analytics'" />
+    <div class="project-overlay">
+      <a href="https://github.com/CodewithAnand-coder/f1-racing-system.git" target="_blank" class="btn-icon" aria-label="GitHub repo"><i class='bx bxl-github'></i></a>
+      
+    </div>
+  </div>
+  <div class="project-body">
+    <h3>F1 Racing Analytics System</h3>
+    <p>Real-time Formula 1 race data analytics platform with lap time tracking, driver performance insights, and race strategy predictions.</p>
+    <div class="project-tags">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    </div>
+    <div class="project-btns">
+      <a href="https://github.com/CodewithAnand-coder/f1-racing-system.git" target="_blank" class="btn btn-sm btn-outline"><i class='bx bxl-github'></i> GitHub</a>
+      
+    </div>
+  </div>
+</article>
+
+<!-- Project 5 -->
+        <article class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="/images/projects/project5.jpg" alt="Student Feedback Portal" loading="lazy" onerror="this.src='https://placehold.co/600x340/0f172a/38bdf8?text=Student+Feedback+Portal'" />
+            <div class="project-overlay">
+              <a href="https://github.com/Thizizmanojkumar-27/student-feedback-portal.git" target="_blank" class="btn-icon" aria-label="GitHub repo"><i class='bx bxl-github'></i></a>
+             
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Student Feedback Portal</h3>
+            <p>A web platform for students to submit feedback on courses, faculty, and facilities with admin analytics dashboard.</p>
+            <div class="project-tags">
+              <span>HTML/CSS</span><span>Java</span>
+            </div>
+            <div class="project-btns">
+              <a href="https://github.com/Thizizmanojkumar-27/student-feedback-portal.git" target="_blank" class="btn btn-sm btn-outline"><i class='bx bxl-github'></i> GitHub</a>
+              
+            </div>
+          </div>
+        </article>
+       
+      </div><!-- /portfolio-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 6 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ CONTACT
+       ============================================================ -->
+  <section class="section contact" id="contact" aria-label="Contact Us">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Let's Talk</p>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <p class="section-desc">Have a project in mind? Drop us a message and we'll get back within 24 hours.</p>
+      </div>
+
+      <div class="contact-wrapper">
+
+        <!-- Contact info column -->
+        <div class="contact-info reveal">
+          <div class="contact-detail">
+            <i class='bx bx-map'></i>
+            <div>
+              <strong>Location</strong>
+              <span>Ramnagar-India</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class='bx bx-envelope'></i>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:rnanand258@gmail.com">rnanand258@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class='bx bx-phone'></i>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+919876543210">+91 80888 16520</a>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div class="contact-socials">
+            <a href="https://github.com/CodewithAnand-coder" aria-label="GitHub"  target="_blank"   class="social-icon"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/rnanand/" aria-label="LinkedIn"  target="_blank" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/tommiee_8/" aria-label="Instagram" target="_blank" class="social-icon"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <!-- NOTE: form submission is simulated (frontend only); wire action/fetch for backend -->
+        <form class="contact-form reveal" id="contactForm" novalidate aria-label="Contact Form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone number" autocomplete="tel" />
+          </div>
+
+          <div class="form-group">
+            <label for="project">Project Description <span class="required">*</span></label>
+            <textarea id="project" name="project" rows="5" placeholder="Tell us about your projectÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦" required></textarea>
+            <span class="form-error" id="projectError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <i class='bx bx-send'></i>
+          </button>
+
+          <!-- Success message (hidden until form submitted) -->
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite" hidden>
+            <i class='bx bx-check-circle'></i>
+            <p>Your message has been sent! We'll reply within 24 hours.</p>
+          </div>
+        </form>
+
+      </div><!-- /contact-wrapper -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">&#x2B22;</span>
+            <span class="logo-text">Code<span class="accent">Nexuss</span></span>
+          </a>
+          <p>A boutique software studio building modern web applications for businesses worldwide.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/CodewithAnand-coder" aria-label="GitHub"  target="_blank"   class="social-icon"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/rnanand/" aria-label="LinkedIn"  target="_blank" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/tommiee_8/" aria-label="Instagram" target="_blank" class="social-icon"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services list -->
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul role="list">
+            <li><a href="#services">Frontend Development</a></li>
+            <li><a href="#services">Backend Development</a></li>
+            <li><a href="#services">AI Integration</a></li>
+            <li><a href="#services">Data Analytics</a></li>
+            <li><a href="#services">Website Deployment</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul role="list" class="footer-contact">
+            <li><i class='bx bx-envelope'></i><a href="mailto:rnanand258@gmail.com">rnanand258@gmail.com</a></li>
+            <li><i class='bx bx-phone'></i><a href="tel:+919876543210">+91 80888 16520</a></li>
+            <li><i class='bx bx-globe'></i><a href="https://www.CodeNexuss.in">www.CodeNexuss.in</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <div class="footer-bottom">
+        <p>Ãƒâ€šÃ‚Â© 2026 CodeNexuss. All Rights Reserved.</p>
+        <p>Built with ÃƒÂ¢Ã¢â€žÂ¢Ã‚Â¥ in India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       AI CHATBOT ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ floating widget (bottom-right)
+       Toggle visibility with the chat button
+       ============================================================ -->
+  <div class="chatbot-wrapper" id="chatbotWrapper" aria-label="Chat with us">
+
+    <!-- Toggle button -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat" aria-expanded="false" aria-controls="chatbotWindow">
+      <i class='bx bx-message-dots' id="chatIcon"></i>
+      <i class='bx bx-x' id="closeIcon" style="display:none"></i>
+    </button>
+
+    <!-- Chat window -->
+    <div class="chatbot-window" id="chatbotWindow" hidden role="dialog" aria-modal="true" aria-label="Chat Window">
+      <!-- Header -->
+      <div class="chat-header">
+        <div class="chat-avatar"><i class='bx bx-bot'></i></div>
+        <div>
+          <strong>CodeNexuss Chatbot</strong>
+          <span class="chat-status">&bull; Online</span>
+        </div>
+        <button class="chat-close" id="chatClose" aria-label="Close chat"><i class='bx bx-x'></i></button>
+      </div>
+
+      <!-- Message area -->
+      <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-label="Chat messages"></div>
+
+      <!-- Input area -->
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Ask me anything..." aria-label="Chat input" autocomplete="off" />
+        <button id="chatSend" aria-label="Send message"><i class='bx bx-send'></i></button>
+      </div>
+    </div>
+
+  </div><!-- /chatbot-wrapper -->
+
+   <!-- ============================================================
+        BACK TO TOP BUTTON
+        ============================================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+    <i class='bx bx-chevron-up'></i>
+  </button>
+
+  <!-- ============================================================
+       MAIN SCRIPT
+       ============================================================ -->
+  <script src="script.js"></script>
+</body>
+</html>

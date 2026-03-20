@@ -1,0 +1,7 @@
+com\codenexus\backend\service\GeminiService.class
+com\codenexus\backend\BackendApplication.class
+com\codenexus\backend\repository\ContactRepository.class
+com\codenexus\backend\controller\AdminController.class
+com\codenexus\backend\controller\ChatController.class
+com\codenexus\backend\controller\ContactController.class
+com\codenexus\backend\model\Contact.class
