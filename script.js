@@ -197,7 +197,7 @@ function el(id) {
       projectDescription: projectEl.value.trim()
     };
 
-    fetch('http://localhost:8080/api/contact/submit', {
+    fetch('https://deployment-h541.onrender.com/api/contact/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -310,7 +310,7 @@ function el(id) {
   /* Ã¢â€â‚¬Ã¢â€â‚¬ Fetch bot response from Backend Ã¢â€â‚¬Ã¢â€â‚¬ */
   async function getBotResponse(userMsg) {
     try {
-      const response = await fetch(`http://localhost:8080/api/chat/response?message=${encodeURIComponent(userMsg)}`);
+      const response = await fetch(`https://deployment-h541.onrender.com/api/chat/response?message=${encodeURIComponent(userMsg)}`);
       if (!response.ok) throw new Error('Network response was not ok');
       const data = await response.json();
       return data.response;

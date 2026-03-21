@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tableBody = document.getElementById('contactTableBody');
     const emptyState = document.getElementById('emptyState');
 
-    const API_BASE = 'http://localhost:8080/api';
+    const API_BASE = 'https://deployment-h541.onrender.com/api';
 
     // Check if user is already logged in
     const token = localStorage.getItem('adminToken');
